@@ -1,31 +1,33 @@
-// Greatest Common Divisor (GCD) of two numbers.
-
 #include <iostream>
-using namespace std;
 
-// Function to return gcd of a and b
 int gcd(int a, int b)
 {
-    // Find Minimum of a and b
-    int result = min(a, b);
-    while (result > 0)
+    if (a == 0 && b)
     {
-        if (a % result == 0 && b % result == 0)
-        {
-            break;
-        }
-        result--;
+        return b;
     }
-
-    // Return gcd of a and b
-    return result;
+    else if (a && b == 0)
+    {
+        return a;
+    }
+    else
+        while (b != 0)
+        {
+            int temp = b;
+            b = a % b;
+            a = temp;
+        }
+    return a;
 }
 
-// Driver code
 int main()
 {
-    int a = 98, b = 56;
-    cout << "GCD of " << a << " and " << b << " is "
-         << gcd(a, b);
+    int num1, num2;
+    std::cout << "Enter two integers: ";
+    std::cin >> num1 >> num2;
+
+    int result = gcd(num1, num2);
+    std::cout << "GCD of " << num1 << " and " << num2 << " is " << result << std::endl;
+
     return 0;
 }
