@@ -1,5 +1,4 @@
-// Min-Max algorithm works by iterating through the list and keeping track of the current minimum and maximum values. Here’s an iterative approach in  C++.
-
+// Min-Max algorithm works by iterating through the list and keeping track of the current minimum and maximum values.
 // Algorithm
 // 1. Set `min` to a very large number (or the first element of the list).
 // 2. Set `max` to a very small number (or the first element of the list).

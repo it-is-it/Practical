@@ -1,3 +1,4 @@
+// The Greatest Common Divisor (GCD) of two integers is the largest positive integer that divides both numbers without leaving a remainder. For example, the GCD of 12 and 18 is 6.
 // Algorithm:
 // 1.Start.
 // 2.Read two numbers a and b.

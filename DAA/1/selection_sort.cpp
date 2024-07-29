@@ -1,5 +1,5 @@
+// Selection Sort is a sorting algorithm that divides the input list into two parts: the sorted part and the unsorted part. It repeatedly selects the smallest (or largest) element from the unsorted part and moves it to the end of the sorted part.
 // Algorithm:
-
 // 1. Start with the first element of the array.
 // 2. Find the smallest element in the unsorted part of the array.
 // 3. Swap this smallest element with the first element of the unsorted part.

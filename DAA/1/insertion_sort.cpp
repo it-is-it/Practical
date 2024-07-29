@@ -1,3 +1,4 @@
+// Insertion Sort is a sorting algorithm that builds the final sorted list one item at a time. It repeatedly takes the next item from the unsorted part and inserts it into its correct position in the sorted part.
 // Algorithm:
 // 1. Start from the second element of the array (index 1), as the first element is considered already sorted.
 // 2. For each element `key` at position `i` (from `1` to `n-1`):

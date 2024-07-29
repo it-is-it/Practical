@@ -1,3 +1,4 @@
+// The fibonacci sequence is a series of numbers where each number is the sum of the two preceding ones, usually starting with 0 and 1. The nth Fibonacci number is the number at position n in this sequence.
 // Algorithm:
 // 1. Initialize two variables `a` and `b` to 0 and 1, respectively.
 // 2. Use a loop to iterate from 2 to n (inclusive).
