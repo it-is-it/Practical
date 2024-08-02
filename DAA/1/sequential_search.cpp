@@ -1,11 +1,12 @@
 // Sequential Search, also known as Linear Search, is a simple searching algorithm. It checks each element in the array one by one until it finds the target value or reaches the end of the array.
 
 // Algorithm :
-// 1.Start from the first element of the array.
-// 2.Compare the target value with the current element.
-// 3.If the current element is the target value, return the index of the element.
-// 4.If the current element is not the target value, move to the next element.
-// 5.Repeat steps 2-4 until the target value is found or the end of the array is reached.
+// 1. prompt user to input array size n and target value.
+// 2.Set index i to 0 (start from the first element).
+// 3.While i < n (ensure i is within array bounds):
+// Compare: Check if arr[i] == target.
+//     If True: Return i (index where the target is found).
+//     If False:Increment: Increase i by 1 to move to the next element.
 // 6.If the target value is not found, return -1 (or another indicator that the target is not present).
 
 #include <iostream>

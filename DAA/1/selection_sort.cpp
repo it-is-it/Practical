@@ -1,10 +1,9 @@
 // Selection Sort is a sorting algorithm that divides the input list into two parts: the sorted part and the unsorted part. It repeatedly selects the smallest (or largest) element from the unsorted part and moves it to the end of the sorted part.
 // Algorithm:
-// 1.PROMPT user to enter the size of the array
-// 2.INITIALIZE array of the given size
-// 3. The first element of the array.
-// 2. Find the smallest element in the unsorted part of the array.
-// 3. Swap this smallest element with the first element of the unsorted part.
+// 1. PROMPT user to enter the size of the array and Initialize array of the given size
+// 2. Start with the first element.
+// 3. For each position i, find the smallest element from i to n-1.
+// 3. Swap the smallest found element with the element at position i.
 // 4. Move the boundary between the sorted and unsorted parts one element to the right.
 // 5. Repeat steps 2-4 until the entire array is sorted.
 

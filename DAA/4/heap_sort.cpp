@@ -1,7 +1,8 @@
-
+// Heap Sort:
+// Build a Heap: Convert the array into a binary heap (max-heap for ascending, min-heap for descending).
+// Sort: Repeatedly extract the root (max/min) and adjust the heap, placing the extracted element in the correct position in the array.
 
 //  Algorithm for Heap Sort
-
 //  Step 1: Build Max Heap
 // 1. Build Max Heap:
 //    - For each node from the last non-leaf node to the root node, call heapify to ensure the subtree rooted at each node satisfies the max-heap property.

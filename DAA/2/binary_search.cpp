@@ -1,15 +1,15 @@
 // Binary search is an efficient algorithm used to find an item in a sorted list. It follows the divide and conquer approach by repeatedly dividing the search interval in half. Here's how the binary search algorithm works:
+//  Binary Search Algorithm
 
-// Binary Search Algorithm
 // 1. Initialize:
-//    - Set low to 0 (the start of the list).
-//    - Set high to n - 1 (the end of the list).
+//    - Set low to 0 (start of the list).
+//    - Set high to n - 1 (end of the list).
 
-// 2. Repeat until low is less than or equal to high:
+// 2. Repeat until low ≤ high:
 //    - Compute mid as (low + high) / 2.
-//    - If the target is equal to the middle element (arr[mid]), return mid (the index of the target).
-//    - If the target is less than the middle element, adjust high to mid - 1 (search the left half).
-//    - If the target is greater than the middle element, adjust low to mid + 1 (search the right half).
+//    - If arr[mid] equals target, return mid.
+//    - Else If target < arr[mid], set high to mid - 1.
+//    - Else set low to mid + 1.
 
 // 3. Return -1 if the target is not found (when low exceeds high).
 
