@@ -1,15 +1,14 @@
 // The Greatest Common Divisor (GCD) of two integers is the largest positive integer that divides both numbers without leaving a remainder. For example, the GCD of 12 and 18 is 6.
 // Algorithm:
-// 1.Start.
-// 2.Read two numbers a and b.
-// 3.If a is 0 and b is not 0, return b as the GCD.
-// 4.If b is 0 and a is not 0, return a as the GCD.
-// 5.While b is not 0:
-// Store the value of b in a temporary variable temp.
-// Update b to be the remainder of a divided by b (i.e., a % b).
-// Assign the value of temp to a.
-// 6.When b becomes 0, the value of a is the GCD.
-// 7.stop
+// 1. Start
+// 2.Read two numbers, a and b.
+// 3.If a == 0 and b != 0, return b as the GCD and If b == 0 and a != 0, return a as the GCD.
+// 4.While b is not 0:
+//      - Store the value of b in a temporary variable temp.
+//      - Update b to be a % b.
+//      - Assign the value of temp to a.
+// 5. When b becomes 0, the value of a is the GCD.
+// 6. Stop
 
 #include <iostream>
 using namespace std;

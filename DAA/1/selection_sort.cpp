@@ -1,6 +1,8 @@
 // Selection Sort is a sorting algorithm that divides the input list into two parts: the sorted part and the unsorted part. It repeatedly selects the smallest (or largest) element from the unsorted part and moves it to the end of the sorted part.
 // Algorithm:
-// 1. Start with the first element of the array.
+// 1.PROMPT user to enter the size of the array
+// 2.INITIALIZE array of the given size
+// 3. The first element of the array.
 // 2. Find the smallest element in the unsorted part of the array.
 // 3. Swap this smallest element with the first element of the unsorted part.
 // 4. Move the boundary between the sorted and unsorted parts one element to the right.
@@ -14,7 +16,6 @@ void selectionSort(int arr[], int n)
 {
     for (int i = 0; i < n - 1; i++)
     {
-        // Find the index of the minimum element in the unsorted part
         int minIndex = i;
         for (int j = i + 1; j < n; j++)
         {
@@ -23,7 +24,6 @@ void selectionSort(int arr[], int n)
                 minIndex = j;
             }
         }
-        // Swap the found minimum element with the first element of the unsorted part
         if (minIndex != i)
         {
             int temp = arr[i];

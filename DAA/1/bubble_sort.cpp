@@ -1,12 +1,17 @@
 // Bubble sort is a simple sorting algorithm that works by repeatedly stepping through the list to be sorted, comparing adjacent elements, and swapping them if they are in the wrong order. This process is repeated until the list is sorted.
 
-// Iterative Bubble Sort Algorithm
-// 1. Start with the first element of the list.
-// 2. Compare the current element with the next element.
-// 3. Swap them if the current element is greater than the next element.
-// 4. Move to the next pair of elements and repeat the comparison and swapping.
-// 5. Repeat the process for each element, reducing the number of comparisons as the largest elements "bubble" to the end of the list.
-// 6. Continue until no more swaps are needed.
+// Algorithm for Bubble Sort with Operations
+//    1 Prompt user for the number of elements (size).
+//    2 Allocate memory for the array (arr) and  Input the elements into the array.
+// 3. Bubble Sort:
+//    - For each element from the first to the second last (i from 0 to n-2):
+//      - Set swapped to false.
+//      - For each element from the first to n-i-2 (j from 0 to n-i-2):
+//        - Compare arr[j] with arr[j+1].
+//        - If arr[j] > arr[j+1], swap them and set swapped to true.
+//      - If swapped is false, break the loop.
+
+// 4. Use printArray to display the sorted array.
 
 // Bubble Sort in C++
 #include <iostream>

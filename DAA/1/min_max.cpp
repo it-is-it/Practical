@@ -1,11 +1,11 @@
 // Min-Max algorithm works by iterating through the list and keeping track of the current minimum and maximum values.
 // Algorithm
-// 1. Set `min` to a very large number (or the first element of the list).
-// 2. Set `max` to a very small number (or the first element of the list).
-// 3. Iterate through the list:
-// For each element, check if it is less than the current minimum. If so, update the minimum.
-// Check if it is greater than the current maximum. If so, update the maximum.
-// 4. Return the minimum and maximum values.
+// 1. Prompt user to enter the size of array and initialize array dynamically.
+// 2. Set `min` to the first element of the list.
+// 3. Set `max` to the first element of the list.
+// 4. For each element i, check if (arr[i] < min). If so, min = arr[i].
+// 5. For each element i,Check if (arr[i]>max). If so, max = arr[i].
+// 6. Return the minimum and maximum values.
 
 // C++ Program
 #include <iostream>
@@ -34,7 +34,6 @@ int main()
     int size;
     cout << "Enter the number of elements: ";
     cin >> size;
-    // Create an array of the specified size
     int *arr = new int[size];
     cout << "Enter " << size << " elements:" << endl;
     for (int i = 0; i < size; ++i)
@@ -45,7 +44,6 @@ int main()
     findMinMax(arr, size, min, max);
     cout << "Minimum value: " << min << endl;
     cout << "Maximum value: " << max << endl;
-    // Clean up dynamic memory
     delete[] arr;
     return 0;
 }

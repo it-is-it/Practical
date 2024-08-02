@@ -1,14 +1,17 @@
 // Insertion Sort is a sorting algorithm that builds the final sorted list one item at a time. It repeatedly takes the next item from the unsorted part and inserts it into its correct position in the sorted part.
 // Algorithm:
-// 1. Start from the second element of the array (index 1), as the first element is considered already sorted.
-// 2. For each element `key` at position `i` (from `1` to `n-1`):
-//    - Set `j` to `i-1`** (the index of the element just before `key`).
-//    - While `j` is greater than or equal to `0` and the element at `arr[j]` is greater than `key`:
-//      - Move the element `arr[j]` one position ahead (`arr[j + 1] = arr[j]`).
-//      - Decrement `j` by `1`.
-//    - **Place `key` in the correct position** (`arr[j + 1]`).
-// 3. Repeat the above steps for all elements in the array.
-// 4. End when the entire array is sorted.
+// 1.Start with the second element in the array (at index 1), first element is consider already sorted.
+// 2.For each element at index i (from 1 to n-1):
+//      1. Set the Key:
+//         - Set key to the element at index i.
+//         - Set j to i-1.
+//      2. Shift Elements:
+//         - While j >= 0 and the element at arr[j] > key:
+//           - Move arr[j] to the position j+1.
+//           - j=j-1.
+//      3. Place the Key:
+//         - Insert key into the position j+1.
+// 3. The array is now sorted.
 
 // C++ Program
 #include <iostream>
