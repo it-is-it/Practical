@@ -1,32 +1,47 @@
 #include <iostream>
 #include <climits>
-
 using namespace std;
 
-int MatrixChainOrder(int p[], int i, int j)
+int matrixChainMultiplication(int p[], int n)
 {
-    if (i == j)
-        return 0;
+    int m[n][n];
 
-    int mini = INT_MAX;
+    for (int i = 1; i < n; i++)
+        m[i][i] = 0;
 
-    // Try placing parenthesis at different positions and calculate the minimum cost
-    for (int k = i; k < j; k++)
+    for (int l = 2; l < n; l++)
     {
-        int count = MatrixChainOrder(p, i, k) + MatrixChainOrder(p, k + 1, j) + p[i - 1] * p[k] * p[j];
+        for (int i = 1; i < n - l + 1; i++)
+        {
+            int j = i + l - 1;
+            m[i][j] = INT_MAX;
 
-        mini = min(count, mini);
+            for (int k = i; k <= j - 1; k++)
+            {
+                int q = m[i][k] + m[k + 1][j] + p[i - 1] * p[k] * p[j];
+                if (q < m[i][j])
+                    m[i][j] = q;
+            }
+        }
     }
 
-    return mini;
+    return m[1][n - 1];
 }
 
 int main()
 {
-    int arr[] = {1, 2, 3, 4, 3};
-    int N = sizeof(arr) / sizeof(arr[0]);
+    int n;
+    cout << "Enter the number of matrices: ";
+    cin >> n;
 
-    cout << "Minimum number of multiplications is " << MatrixChainOrder(arr, 1, N - 1) << endl;
+    int p[n + 1];
+    cout << "Enter the dimensions of matrices (as an array): ";
+    for (int i = 0; i <= n; i++)
+    {
+        cin >> p[i];
+    }
+
+    cout << "Minimum number of multiplications required: " << matrixChainMultiplication(p, n + 1) << endl;
 
     return 0;
 }

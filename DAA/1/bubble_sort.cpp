@@ -10,7 +10,6 @@
 //        - Compare arr[j] with arr[j+1].
 //        - If arr[j] > arr[j+1], swap them and set swapped to true.
 //      - If swapped is false, break the loop.
-
 // 4. Use printArray to display the sorted array.
 
 // Bubble Sort in C++
