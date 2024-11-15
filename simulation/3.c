@@ -1,5 +1,11 @@
+// 3. ) Write a program to implement dynamic physical model representing a Wheel Suspension system
+
 #include <stdio.h>
 #include <math.h>
+
+#ifndef M_PI
+#define M_PI 3.14159265358979323846
+#endif
 
 #define MASS 1000.0          // Mass of the vehicle (kg)
 #define DAMPING 100.0        // Damping coefficient (N·s/m)
