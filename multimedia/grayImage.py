@@ -21,7 +21,7 @@ def to_binary(grayscale_image, threshold=128):
     return binary_image
 
 # Load the image
-image = cv2.imread('profile.jpg')
+image = cv2.imread('C:/Users/ishwo/Desktop/it-is-it/practical/multimedia/lenna.jpg')
 if image is None:
     print("Error: Image not found.")
     exit()
