@@ -1,0 +1,47 @@
+# Ignore Visual Studio specific files
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Ignore build and bin/obj directories
+bin/
+obj/
+[Bb]uild/
+[Ll]og/
+
+# Ignore package dependencies
+packages/
+*.nupkg
+*.snupkg
+project.lock.json
+project.assets.json
+*.dll
+*.exe
+*.pdb
+
+# Ignore temporary files
+*.tmp
+*.log
+*.bak
+*.swp
+*.sln.cache
+
+# Ignore Resharper and Rider files
+.idea/
+*.DotSettings.user
+
+# Ignore .NET Core & ASP.NET Core
+appsettings*.json
+.env
+
+# Ignore compiled and generated files
+*.db
+*.db-journal
+*.generated.cs
+*.g.cs
+
+.vscode/
+.idea/
+secrets.json
