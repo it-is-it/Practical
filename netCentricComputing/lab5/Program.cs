@@ -37,7 +37,7 @@ class Dog:Animal{
 
 class Test{
     public static void Main(){
-        Dog d1 = new Dog("Tommy","Black",2);
+        Dog d1 = new Dog("Tom","Brown",2);
         d1.eat();
         d1.showColor();
         PrintName.printName("5");

@@ -14,7 +14,7 @@ namespace overriding{
  class Cat:Animal{
     public override void eat()
     {
-        Console.WriteLine("I eat fish.");
+        Console.WriteLine("I eat Rice.");
     }
 }
 

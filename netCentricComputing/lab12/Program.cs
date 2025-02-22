@@ -19,7 +19,7 @@ class Program{
             Console.WriteLine(str);
             str = reader.ReadLine();
         }
-        reader.Close();
+        reader.Close(); 
 
         PrintName.printName("12");
     }
