@@ -1,0 +1,24 @@
+@{
+    ViewData["Title"] = "Home";
+    var currentDateTime = ViewBag.CurrentDateTime;
+    var name = ViewBag.Name;
+    var rollNo = ViewBag.RollNo;
+    var tableNumber = ViewBag.TableNumber;
+}
+
+<h2>Student Information</h2>
+<p><b>Current Date and Time:</b> @currentDateTime</p>
+<p><b>Name:</b> @name</p>
+<p><b>Roll No.:</b> @rollNo</p>
+
+<h3>Multiplication Table of @tableNumber</h3>
+<table border="1">
+    @for (int i = 1; i <= 10; i++)
+    {
+        <tr>
+            <td>@tableNumber x @i = @(tableNumber * i)</td>
+        </tr>
+    }
+</table>
+
+<a asp-action="Create" class="btn btn-primary mt-4">Add Student</a>

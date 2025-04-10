@@ -1,0 +1,14 @@
+@model StudentMVC.Models.Student
+@{
+    ViewData["Title"] = "Student Details";
+}
+
+<h2>Student Details</h2>
+<ul>
+    <li><b>ID:</b> @Model.StdID</li>
+    <li><b>Name:</b> @Model.Name</li>
+    <li><b>Address:</b> @Model.Address</li>
+    <li><b>Faculty:</b> @Model.Faculty</li>
+</ul>
+
+<a asp-action="Index" class="btn btn-secondary">Back to Home</a>
